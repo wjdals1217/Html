@@ -6,12 +6,13 @@
     </head>
     <body>
         <h3>기본입력</h3>
-        <form action="https:naver.com">
+        <form action="https:naver.com"> <!--action 뒤는 서버주소-->
             <table border="1">
                 <tr>
                     <td>아이디</td>
                     <td>
-                        <input type="text" name="uid"></td>
+                        <input type="text" name="uid"></td> 
+                        <!--name속성은 input요소의 이름-->
                 </tr>
                 <tr>
                     <td>비밀번호</td>
@@ -31,6 +32,7 @@
         <form action="https://daum.net">
             <h4>취미를 고르세요.</h4>
             <label><input type="checkbox" name="hobby" value="1"/>등산</label>
+            <!--label태그는 input태그와 등산을 하나로 묶어준다. 페이지에서 등산을 눌러도 체크가 된다.-->
             <label><input type="checkbox" name="hobby" value="2"/>여행</label>
             <label><input type="checkbox" name="hobby" value="3"/>영화</label>
             <label><input type="checkbox" name="hobby" value="4"/>게임</label>

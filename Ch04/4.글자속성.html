@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>4.글자속성</title>
+        <!--
+            날짜 : 2023/07/05
+            이름 : 최정민
+            내용 : CSS 글자속성 실습하기
+        -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Nanum+Gothic&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Nanum+Gothic&display=swap');
+            .box1 >p:nth-child(1) {font-size: 16px;}
+            .box1 >p:nth-child(2) {font-size: 32px;}
+            .box1 >p:nth-child(3) {font-size: 100%;}
+            .box1 >p:nth-child(4) {font-size: 200%;}
+            .box1 >p:nth-child(5) {font-size: 2em;} /** %와 같다 **/
+
+            .box2 >p {font-size: 32px;}
+            .box2 > p:nth-child(1){font-family: '궁서체';}
+            .box2 > p:nth-child(2){font-family: '휴먼편지체';}
+            .box2 > p:nth-child(3){font-family: '휴먼옛체';}
+            .box2 > p:nth-child(4){font-family: 'Nanum Gothic', sans-serif;}
+            .box2 > p:nth-child(5){font-family: 'Bagel Fat One', cursive;}
+            
+            .box3 > p:nth-child(1){font-weight: 100;}
+            .box3 > p:nth-child(2){font-weight: 200;}
+            .box3 > p:nth-child(3){font-weight: 400;}
+            .box3 > p:nth-child(4){font-weight: bold;}
+            .box3 > p:nth-child(5){font-weight: bolder;}
+
+            .box4 > p:nth-child(1) {font: normal 16px '돋움';}
+            .box4 > p:nth-child(2) {font: bold 32px 'Nanum Gothinc';}
+            .box4 > p:nth-child(3) {font: bold 16px 'Bagel Fat One';}
+            .box4 > p:nth-child(4) {font: normal 16px '궁서체';}
+            .box4 > p:nth-child(5) {font: normal 16px '맑은 고딕';}
+        </style>
+    </head>
+    <body>
+        <h3>4.글자속성</h3>
+
+        <h4>font-size</h4>
+        <div class="box1">
+            <p>Hello, 안녕하세요!</p>
+            <p>Hello, 안녕하세요!</p>
+            <p>Hello, 안녕하세요!</p>
+            <p>Hello, 안녕하세요!</p>
+            <p>Hello, 안녕하세요!</p>
+        </div>
+        <h4>font-family</h4>
+        <div class="box2">
+            <p>Hello, 안녕하세요!</p>
+            <p>Hello, 안녕하세요!</p>
+            <p>Hello, 안녕하세요!</p>
+            <p>Hello, 안녕하세요!</p>
+            <p>Hello, 안녕하세요!</p>
+        </div>
+        <h4>font-weight</h4>
+        <div class="box3">
+            <p>Hello, 안녕하세요!</p>
+            <p>Hello, 안녕하세요!</p>
+            <p>Hello, 안녕하세요!</p>
+            <p>Hello, 안녕하세요!</p>
+            <p>Hello, 안녕하세요!</p>
+        </div>
+        <h4>font 통합속성</h4>
+        <div class="box4">
+            <p>Hello, 안녕하세요!</p>
+            <p>Hello, 안녕하세요!</p>
+            <p>Hello, 안녕하세요!</p>
+            <p>Hello, 안녕하세요!</p>
+            <p>Hello, 안녕하세요!</p>
+        </div>
+    </body>
+</html>

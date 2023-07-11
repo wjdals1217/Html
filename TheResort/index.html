@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>The Resort</title>
+        <!-- http://chhak.click/TheResort/index.html -->
+        
+        <style>
+        * {
+        margin: 0;
+        padding: 0;
+        font: normal 12px "Dotum";
+        }
+
+        ul, ol {list-style: none;}
+        a {text-decoration: none; color: #111;}
+        
+        #container {
+            width: 100%;
+        }
+        header {
+            width: 100%;
+            height: 100px;
+            background: #fefefe url(./images/header_bg.png) repeat-x bottom;
+        }
+        header > div {
+            position: relative;
+            width: 1000px;
+            height: 100px;
+            margin: 0 auto;
+        }
+        header .lnb {
+           float: right;
+           margin-top: 5px;
+           margin-right: 10px;
+        }
+
+        header .gnb {
+            position: absolute;
+            bottom: 0px;
+            width: 1000px;
+            height: 28px;
+            z-index: 10;
+            background: #becedb;
+        }
+        header .gnb > a {
+            float: left;
+            /* float를 사용하면 자동으로 block처리됨*/
+            line-height: 28px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            width: 20%;
+            height: 100%;
+            border-right: 1px solid white;
+            box-sizing: border-box;
+        }
+        header .gnb > a:hover {color: #9eafbd;}
+        header .gnb > a:nth-of-type(1) {
+            border-left: 1px solid white;
+        }
+
+        #content {padding-top: 28px;}
+        #content > div:nth-child(1) {position: absolute;}
+        #content > .mama {
+            position: relative;
+            width: 1000px;
+            height:620px;
+            background: url(./images/main_bg.png);
+            margin: 0 auto;
+        }
+        #content .mama > #article > div.box1 {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            left: 0;
+            top: 0;
+            background: url('./images/main_box1_bg.png');
+        }
+        .mama .box1 >img:nth-child(1) {margin-top: -28px;}
+        #article .box1 >img:nth-child(2) {position: absolute; left: 0; top: 0;}
+
+        #article > div.box2 {
+            text-align: center;
+            padding-top: 30px;
+            box-sizing: border-box;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            left: 200px;
+            top:0;
+            background : url('./images/main_box2_bg.png');
+        }
+        #article > div.box3 {
+            text-align: center;
+            padding-top: 30px;
+            box-sizing: border-box;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            left: 400px;
+            top: 0;
+            background : url('./images/main_box3_bg.png');
+        }
+        #article > div.box3 > img:nth-child(1) {
+            position: absolute;
+            margin-left: 10px;
+            left: 20px;
+            top: 0;
+        }
+        #article > div.box4 {
+            text-align: left;
+            padding-top: 30px;
+            box-sizing: border-box;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            left: 600px;
+            top:0;
+            background : url('./images/main_box4_bg.jpg');
+        }
+        #article > div.box5 {
+            text-align: center;
+            padding-top: 30px;
+            box-sizing: border-box;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            top:0;
+            background : url('./images/main_box5_bg.jpg');
+        }
+        #article > div.box6 {
+            text-align: center;
+            padding-top: 30px;
+            box-sizing: border-box;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            top:0;
+            background : url('./images/main_box6_bg.jpg');
+        }
+        #article > div.box7 {
+            text-align: center;
+            padding-top: 30px;
+            box-sizing: border-box;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            top:0;
+            background : url('./images/main_box7_bg.png');
+        }
+
+        footer {
+            width: 1000px;
+            height: 100px;
+            border: 1px solid red;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+        
+
+
+        </style>
+    
+    </head>
+    <body>
+        <div id="container">
+        <header>
+            <div>
+                <a href="index.html">
+                    <img src="./images/header_logo.png" alt="로고">
+                </a>
+                <div class="lnb">
+                    <span><a href="#">회원가입 |</a></span>
+                    <span><a href="#">로그인 |</a></span>
+                    <span><a href="#">고객센터</a></span>
+                </div>
+                <nav class="gnb">
+                    <a href="#">INTRODUCTION</a>
+                    <a href="#">ROOM</a>
+                    <a href="#">TRAVEL</a>
+                    <a href="#">INFORMATION</a>
+                    <a href="#">COMMUNITY</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div id="content">
+                <div></div>
+                <div class="mama">
+                    <div id="article">
+                        <div class="box1">
+                            <img src="./images/main_box1_img.png" alt="나뭇잎">
+                            <img src="./images/main_box1_txt.png" alt="첫번째">
+                        </div>
+                        <div class="box2">
+                            <img src="./images/main_box2_txt.png" alt="두번째">
+                            <img src="./images/main_box2_tit.png" alt="두번째2">
+                            <img src="./images/main_box2_img.png" alt="두번째3">
+                        </div>
+                        <div class="box3">
+                            <img src="./images/main_box3_hot.png" alt="세번째">
+                            <img src="./images/main_box3_tit.png" alt="세번째2">
+                            <img src="./images/main_box3_txt.png" alt="세번째3">
+                            <img src="./images/main_box3_img.png" alt="세번째4">
+                        </div>
+                        <div class="box4">
+                            <img src="./images/main_box4_tit.png" alt="네번째">
+                            <img src="./images/main_box4_txt.png" alt="네번째2">
+                            <img src="./images/main_box4_img.png" alt="네번째3">
+                        </div>
+                        < class="box5">
+                            <img src="./images/main_box5_go.png" alt="다섯번째">
+                
+                        <div class="box6">
+                            <img src="./images/main_box6_go.png" alt="여섯번째">
+                        </div>
+                        <div class="box7">
+                            <img src="./images/main_box7_tit.png" alt="일곱번째">
+                            <img src="./images/main_box7_txt.png" alt="일곱번째2">
+                            <img src="./images/main_box7_img.png" alt="일곱번째3">
+                        </div>
+                    </div>
+                </div>
+                
+        </main>
+        <footer>
+            <div></div>
+        </footer>
+        </div>
+    </body>
+</html>

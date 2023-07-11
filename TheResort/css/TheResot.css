@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: normal 12px "Dotum";
+    }
+
+    ul, ol {list-style: none;}
+    a {text-decoration: none; color: #111;}
+    
+    #container {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+        height: 100px;
+        background: #fefefe url(/TheResort/images/header_bg.png) repeat-x bottom;
+    }
+    header > div {
+        position: relative;
+        width: 1000px;
+        height: 100px;
+        margin: 0 auto;
+    }
+    header .lnb {
+       float: right;
+       margin-top: 5px;
+       margin-right: 10px;
+    }
+
+    header .gnb {
+        position: absolute;
+        bottom: 0px;
+        width: 1000px;
+        height: 28px;
+        z-index: 10;
+        background: #becedb;
+    }
+    header .gnb > a {
+        float: left;
+        /* float를 사용하면 자동으로 block처리됨*/
+        line-height: 28px;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        width: 20%;
+        height: 100%;
+        border-right: 1px solid white;
+        box-sizing: border-box;
+    }
+    header .gnb > a:hover {color: #9eafbd;}
+    header .gnb > a:nth-of-type(1) {
+        border-left: 1px solid white;
+    }
+
+    #content {padding-top: 28px;}
+    #content > div:nth-child(1) {position: absolute;}
+    #content > .mama {
+        position: relative;
+        width: 1000px;
+        height:620px;
+        background: url(/TheResort/images/main_bg.png);
+        margin: 0 auto;
+    }
+    #content .mama > #article > div.box1 {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 0;
+        top: 0;
+        background: url(/TheResort/images/main_box1_bg.png);
+    }
+    .mama .box1 >img:nth-child(1) {margin-top: -28px;}
+    #article .box1 >img:nth-child(2) {position: absolute; left: 0; top: 0;}
+
+    #article > div.box2 {
+        text-align: center;
+        padding-top: 30px;
+        box-sizing: border-box;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 200px;
+        top:0;
+        background : url(/TheResort/images/main_box2_bg.png);
+    }
+    #article > div.box3 {
+        text-align: center;
+        padding-top: 30px;
+        box-sizing: border-box;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 400px;
+        top: 0;
+        background : url(/TheResort/images/main_box3_bg.png);
+    }
+    #article > div.box3 > img:nth-child(1) {
+        position: absolute;
+        margin-left: 10px;
+        left: 20px;
+        top: 0;
+    }
+    #article > div.box4 {
+        text-align: left;
+        padding-top: 30px;
+        box-sizing: border-box;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 600px;
+        top:0;
+        background : url(/TheResort/images/main_box4_bg.png);
+    }
+    #article > div.box5 {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 0;
+        top:200px;
+        padding-top: 30px;
+        box-sizing: border-box;
+        background : url(/TheResort/images/main_box5_bg.jpg) no-repeat;
+    }
+    #article > div.box5 > img {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #article > div.box6 {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 200px;
+        top:200px;
+        background : url(/TheResort/images/main_box6_bg.jpg) no-repeat;
+    }
+    #article > div.box6 > img {float: right;}
+
+    #article > div.box7 {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top:400px;
+        left: 200px;
+        padding-top: 10px;
+        text-align: center;
+        box-sizing: border-box;
+        background : url(/TheResort/images/main_box7_bg.png);
+    }
+    #article > div.box7 >img:nth-child(1) {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+    #article > div.box7 >img:nth-child(2) {
+        position: absolute;
+        left: 20px;
+        top: 50px;
+    }
+    #article > div.box7 >img:nth-child(3) {
+        position: absolute;
+        left: 22px;
+        top: 105px;
+    }
+    #aside {position: relative; display: none;}
+    #aside > img:nth-child(1) {
+        position: absolute;
+        right: 138px;
+        top: -640px;
+        width: 34px;
+        height: 137px;
+    }
+    #aside > img:nth-child(2) {
+        background-position: center;
+        position: absolute;
+        right: 148px;
+        top: -612px;
+    }
+    #latest {
+        width: 1000px;
+        height: 130px;
+        margin: 0 auto;
+        border-top: 1px solid #becedb;
+        padding-top: 20px;
+    }
+    #latest > div {
+        width: 250px;
+        height: 130px;
+        float: left;
+        margin: 0 auto;
+    }
+    #latest > div > img:nth-child(1) {display: block;}
+    .info1 > img:nth-child(1) {padding-bottom: 10px;}
+    .info2 > img:nth-child(1) {padding-bottom: 6px;}
+    .info2 tr >td {
+        color: gray;
+        line-height: 18px;
+    }
+    .info2 tr > td a {color: #555;}
+    .info3 > img:nth-child(1) {padding-bottom: 6px;}
+    .info3 tr >td {
+        color: gray;
+        line-height: 18px;
+    }
+    .info3 tr > td a {color: #555;}
+    #gal > a {
+        padding-top: 16px;
+        display: inline-block;
+        width: 75px;
+        height: 55px;
+    }
+    #gal > a >img {
+        width: 75px;
+        height: 55px;
+    }
+
+    footer {
+        width: 1000px;
+        height: 100px;
+        margin: 0 auto;
+    }
+    footer > #address {
+        border-top: 1px solid #b9cadc;
+    }
+    #address > .logo {
+        float: left;
+        padding-top: 14px;
+    }
+    footer > div > p {
+        font-size: 11px;
+        display: inline-block;
+        margin-top: 20px;
+        padding-left: 20px;
+        color: #555;
+        line-height: 20px;
+    }
+    #copy {
+        display: inline-block;
+        font-family: Verdana;
+        color: rgb(153, 153, 153);
+        padding-top: 4px;
+    }
+    #resort {
+        color: #5d99b5;
+    }

@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+}
+ul, ol {list-style: none;}
+a {text-decoration: none; color: #111;}
+
+#container {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background: #0077cc;
+}
+
+header > .logo {
+    float: left;
+    color: #fff;
+    text-shadow: 0 -1px 0 #222;
+    font-size: 20px;
+    font-family: 'Merienda', cursive;
+    margin: 16px;
+}
+header > nav {
+    position: relative;
+    float: right;
+    width: 900px;
+    height: 100px;
+}
+header > nav > ul {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+header > nav > ul >li {
+    float: left;
+    width: 200px;
+    height: 60px;
+}
+header > nav > ul >li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+header > nav > ul >li > a:hover {
+    color: #111;
+}
+
+header > nav > ul span {margin-left: 10px;}
+
+header > nav ol {
+    display: none;
+}
+
+header > nav ol > li {}
+header > nav ol > li > a {}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+#slideShow {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+#slideShow > section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#slideShow > section > img {
+    position: absolute;
+}
+#slideShow > section > img:nth-child(1) {left:0; top:0;}
+#slideShow > section > img:nth-child(2) {left:100%; top:0;}
+#slideShow > section > img:nth-child(3) {left:200%; top:0;}
+#slideShow > button {
+    position: absolute;
+    padding: 20px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+#slideShow > button:hover {cursor: pointer; background: #222; opacity: 0.5; color:#fff}
+
+#slideShow > button.left {left:0; top:0;}
+#slideShow > button.right {right:0; top:0;}
+
+#contents {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+#tabMenu {
+    float: left;
+    width: 600px;
+    height: 300px;
+    padding-top: 20px;
+}
+
+#tabMenu > label {
+    display: inline-block;
+    padding: 15px 25px;
+    border: 1px solid #ddd;
+    background: #eee;
+    color: #aaa;
+    cursor: pointer;
+}
+
+#tabMenu > label > input[type=radio]{display: none;}
+#tabMenu > label:nth-child(1) {
+    color: #bb0000;
+    font-weight: bold;
+}
+
+#tabMenu >section {
+    position: relative;
+    width: 100%;
+    height: 246px;
+    border-top: 1px solid #ddd;
+    box-sizing: border-box;
+}
+#tabMenu >section >article {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+#tabMenu >section >article.on {display:block}
+#tabMenu >section ul{
+    list-style: disc;
+    margin-left: 36px;
+    margin-top: 26px;
+}
+#tabMenu >section ul>li{
+    margin-bottom: 12px;
+}
+#tabMenu >section ul a {
+    font-size:16px;                
+}
+#tabMenu >section ol {}
+#tabMenu >section ol >li {}
+#tabMenu >section ol a {}
+#tabMenu >section ol img {}
+
+#links {
+    float: left;
+    width: 600px;
+    height: 300px;
+    box-sizing: border-box;
+}
+#links > ul {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#links > ul > li {
+    float: left;
+    width: 33.33%;
+    height: 100%;
+}
+#links > ul a {}
+#links > ul span {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 150px;
+    margin: 26px auto;
+}
+
+#links > ul span.icon1 {background-image: url('../images/icon-1.jpg');}
+#links > ul span.icon2 {background-image: url('../images/icon-2.jpg');}
+#links > ul span.icon3 {background-image: url('../images/icon-3.jpg');}
+
+#links > ul h3 {
+    text-align: center;
+    font-size: 16px;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    border-top: 2px solid #222;
+}
+
+#bottomMenu {
+    width: 100%;
+    height: 20px;
+    position: relative;
+}
+#bottomMenu ul {
+    margin-top: 15px;
+}
+#bottomMenu ul li {
+    float: left;
+    padding: 5px 20px;
+    border-right: 1px solid #ddd;
+}
+#bottomMenu ul > li:last-child {border-right: none;}
+#bottomMenu ul > li >a {
+    font-size: 15px;
+    color: #666;
+}
+#sns {
+    float: right;
+    /* position:absolute;
+    right: 0; */
+}
+#sns ul {}
+
+#sns ul > li {
+    border: none;
+    padding : 5px;
+}
+#company {
+    clear: left;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+#company > p {
+    font-size: 14px;
+    color: #aaa;
+}

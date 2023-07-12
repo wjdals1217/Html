@@ -90,15 +90,15 @@
                 width: 1000px;
                 height: auto;
                 margin: 5px auto;
-                overflow: hidden;
             }
-
+            main > div {overflow: hidden;}
             main > div > div{border: 1px solid #d7d7d7; box-sizing: border-box;}
             main > div > .banner {
                 float: left;
                 width: 670px;
                 height: 320px;
                 background: url('/Real113/images/main_banner_bg.jpg') no-repeat;
+                overflow: hidden;
             }
             main > div > .banner > img {
                 margin-top: 100px;
@@ -171,7 +171,9 @@
                 line-height: 20px;
             }
             .qna >table a {color: inherit;}
-            .qna > table a {text-decoration: underline;}
+            .qna > table a:hover {text-decoration: underline;}
+            
+            main > section {overflow: hidden;}
             main > section > aside {
                 float: left;
                 width: 195px;
@@ -266,7 +268,7 @@
                 font-size: 14px;
                 font-weight: bold;
             }
-            main > section > article > h3 {float: right;}
+            main > section > article > h3 > a {float: right;}
             main > section >article > ul {
                 width: 100%;
                 height: auto;
@@ -286,14 +288,29 @@
                 display: block;
                 text-align: center;
             }
+            main > section > article > ul > li > a:hover {text-decoration: underline;}
             /* 푸터 */
             footer {
                 width: 1000px;
                 height: 130px;
-                border: 1px solid blue;
+                border: 1px solid #d7d7d7;
+                border-top: 2px solid #777;
+                padding: 10px;
+                box-sizing: border-box;
                 margin-top: 5px;
                 margin: 0 auto;
                 margin-bottom: 10px;
+            }
+            footer >p {
+                font-size: 11.5px;
+                color: #585858;
+                line-height: 20px;
+                margin-left: 10px;
+            }
+            footer > p > span {
+                display: block;
+                margin-top: 6px;
+                font-weight: bold;
             }
         </style>
     </head>

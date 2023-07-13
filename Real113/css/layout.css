@@ -34,7 +34,7 @@ main {
     margin: 5px auto;
     overflow: hidden;
 }
-
+main > div {overflow: hidden;}
 main > div > div{border: 1px solid green; box-sizing: border-box;}
 .banner {
     float: left;
@@ -52,6 +52,7 @@ main .call {
     height: 182px;
     margin-top: 5px;
 }
+main > section {overflow: hidden;}
 main > section > aside {
     float: left;
     width: 195px;

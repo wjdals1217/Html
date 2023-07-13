@@ -17,7 +17,7 @@
             header {
                 width: 100%;
                 height: 80px;
-                background-image: url('/Real113/images/header_bg.gif');
+                background-image: url('../images/header_bg.gif');
             }
             header > div {
                 position: relative;
@@ -73,7 +73,7 @@
                 left: 6px;
             }
             .latest > a:nth-child(2)::before {
-                content: url('/Real113/images/ico_latest.gif');
+                content: url('../images/ico_latest.gif');
             }
             .latest >a:nth-child(2):hover {text-decoration: underline;}
 
@@ -90,7 +90,7 @@
                 float: left;
                 width: 670px;
                 height: 320px;
-                background: url('/Real113/images/main_banner_bg.jpg') no-repeat;
+                background: url('../images/main_banner_bg.jpg') no-repeat;
                 overflow: hidden;
             }
             main > div > .banner > img {
@@ -191,7 +191,7 @@
                 line-height: 20px;
             }
             main > section > aside > article > ul > li >a::before {
-                content: url('/Real113/images/ico_latest.gif');
+                content: url('../images/ico_latest.gif');
             }
             main > section > aside > article > a {
                 display: block;
@@ -204,16 +204,16 @@
                 background-position: 10px center;
             }
             .quick > a:nth-of-type(1) {
-                background-image: url('/Real113/images/aside_quick_court.png');
+                background-image: url('../images/aside_quick_court.png');
             }
             .quick > a:nth-of-type(2) {
-                background-image: url('/Real113/images/aside_quick_google.png');
+                background-image: url('../images/aside_quick_google.png');
             }
             .quick > a:nth-of-type(3) {
-                background-image: url('/Real113/images/aside_quick_naver_map.png');
+                background-image: url('../images/aside_quick_naver_map.png');
             }
             .quick > a:nth-of-type(4) {
-                background-image: url('/Real113/images/aside_quick_naver_subway.png');
+                background-image: url('../images/aside_quick_naver_subway.png');
             }
 
             main > section > aside > a {
@@ -242,7 +242,7 @@
                 box-sizing: border-box;
                 border: 1px solid #999;
                 margin-top: 6px;
-                background: url('/Real113/images/aside_banner_bg.jpg');
+                background: url('../images/aside_banner_bg.jpg');
             }
             main > section > aside > .banner > img:nth-child(1) {float: right;}
             main > section > aside > .banner > img:nth-child(2) {margin-left: 10px; margin-top: 30px;}

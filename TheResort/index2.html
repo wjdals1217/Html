@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TheResort2</title>
+        <style>
+            /* 초기화 */
+            * {
+                margin: 0;
+                padding: 0;
+                font: normal 12px '돋움';
+            }
+            ul, ol {list-style: none;}
+            a {text-decoration: none; color: #111;}
+
+            #container {
+                width: 100%;
+                height: auto;
+            }
+            
+            header {
+                width: 100%;
+                height: 100px;
+                background-image: url(./images/header_bg.png) ;
+                background-repeat: repeat-x;
+                background-position: bottom;
+            }
+            header > div {
+                width: 1000px;
+                height: 100%;
+                margin: 0 auto;
+                position: relative;
+            }
+            header > div > .gnb {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 28px;
+            }
+            header > div > .gnb > li {
+                float: left;
+                width: 20%;
+                height: 100%;
+                background-color: #becedb;
+                border-left: 1px solid white;
+                box-sizing: border-box;
+            }
+            header > div > .gnb > li:nth-last-of-type(1) {border-right: 1px solid #fff;}
+            header > div > .gnb > li > a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                line-height: 28px;
+                color: white;
+                font-weight: bold;
+            }
+            header > div > p {
+                position: absolute;
+                right: 5px;
+                top: 10px;
+            }
+            main {
+                width: 1000px;
+                height: auto;
+                margin: 0 auto;
+            }
+            main > div {
+                width: 100%;
+                height: 620px;
+                margin-top: 24px;
+                background-image: url('./images/main_bg.png');
+            }
+            main > div > .box {
+                float: left;
+                width: 200px;
+                height: 200px;
+                position: relative;
+            }
+            main > div > .box1 {
+                background-image: url('./images/main_box1_bg.png');
+                position: relative;
+            }
+            main > div > .box1 > img:nth-child(1) {
+                position: absolute;
+                left: 0; 
+                top:-25px;
+            }
+            main > div > .box1 > img:nth-child(2) {position: absolute; left: 0; top:
+            6;}
+            main > div > .box2 {background-image: url('./images/main_box2_bg.png');}
+            main > div > .box3 {background-image: url('./images/main_box3_bg.png');}
+            main > div > .box4 {background-image: url('./images/main_box4_bg.png');}
+            main > div > .box5 {background-image: url('./images/main_box5_bg.jpg');clear: left;}
+            main > div > .box6 {background-image: url('./images/main_box6_bg.jpg');}
+            main > div > .box7 {background-image: url('./images/main_box7_bg.png');clear: left; margin-left: 200px;}
+            
+            main >div > .box > .tit {position: absolute; left: 18px; top: 30px;}
+            main >div > .box > .txt {position: absolute; left: 18px; top: 63px;}
+            main >div > .box > .img {position: absolute; right: 0; bottom: 0;}
+            #hot {position: absolute; left: 10px; top: 0px;}
+            main >div > .box > .go {position: absolute; right: 0; top: 0;}
+
+            main > section {
+                width: 100%;
+                height: 150px;
+                border: 1px solid violet;
+                box-sizing: border-box;
+            }
+            main > section > article {
+                float: left;
+                width: 25%;
+                height: 100%;
+                margin: 0 auto;
+                border: 1px solid black;
+                box-sizing: border-box;
+            }
+            footer {
+                width: 1000px;
+                height: 100px;
+                border: 1px solid blue;
+                box-sizing: border-box;
+                margin: 0 auto;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <div>
+                    <a href="./index2.html" class="logo"><img src="./images/header_logo.png" alt="로고"></a>
+                    <ul class="gnb">
+                        <li><a href="#">INTRODUCTION</a></li>
+                        <li><a href="#">ROOM</a></li>
+                        <li><a href="#">TRAVEL</a></li>
+                        <li><a href="#">INFORMATION</a></li>
+                        <li><a href="#">COMMUNITY</a></li>
+                    </ul>
+                    <p>
+                        <a href="#">회원가입 |</a>
+                        <a href="#"> 로그인 |</a>
+                        <a href="#"> 고객센터</a>
+                    </p>
+                </div>
+            </header>
+            <main>
+                <div>
+                    <div class="box box1">
+                        <img src="./images/main_box1_img.png" alt="나뭇잎">
+                        <img src="./images/main_box1_txt.png" alt="여행글귀">
+                    </div>
+                    <div class="box box2">
+                        <img src="./images/main_box2_tit.png" alt="투어가이드" class="tit">
+                        <img src="./images/main_box2_txt.png" alt="투어글귀" class="txt">
+                        <img src="./images/main_box2_img.png" alt="투어사진" class="img">
+                    </div>
+                    <div class="box box3">
+                        <img src="./images/main_box3_hot.png" alt="핫" id="hot">
+                        <img src="./images/main_box3_tit.png" alt="예약" class="tit">
+                        <img src="./images/main_box3_txt.png" alt="예약글귀" class="txt">
+                        <img src="./images/main_box3_img.png" alt="예약사진" class="img">
+                    </div>
+                    <div class="box box4">
+                        <img src="./images/main_box4_tit.png" alt="이벤트" class="tit">
+                        <img src="./images/main_box4_txt.png" alt="이벤트글귀" class="txt">
+                        <img src="./images/main_box4_img.png" alt="이벤트사진" class="img">
+                    </div>
+                    <div class="box box5"><img src="./images/main_box5_go.png" alt="go" class="go"></div>
+                    <div class="box box6"><img src="./images/main_box6_go.png" alt="go" class="go"></div>
+                    <div class="box box7">
+                        <img src="./images/main_box7_tit.png" alt="트래픽맵" class="tit">
+                        <img src="./images/main_box7_txt.png" alt="지도글귀" class="txt">
+                        <img src="./images/main_box7_img.png" alt="지도사진" class="img">
+                    </div>
+                </div>
+                <section>
+                    <article>
+                        <img src="./images/info.png" alt="정보">
+                    </article>
+                    <article>
+                        <img src="./images/reser.png" alt="예약">
+                    </article>
+                    <article>
+                        <img src="./images/notice.png" alt="공지">
+                    </article>
+                    <article>
+                        <img src="./images/gallery.png" alt="갤러리">
+                    </article>
+                </section>
+            </main>
+            <footer></footer>
+        </div>
+    </body>
+</html>

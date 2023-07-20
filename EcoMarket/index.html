@@ -4,262 +4,7 @@
     <meta charset="UTF-8" />
     <title>EcoMarket_index</title>
 
-    <style>
-      /* 초기화 */
-      * {
-        margin: 0;
-        padding: 0;
-        font: normal 12px "noto sans korean";
-      }
-      ul, ol {list-style: none;}
-      a {
-        text-decoration: none;
-        color: #111;
-      }
-
-      #container {
-        width: 100%;
-        height: 100%;
-      }
-      header {
-        width: 100%;
-        height: auto;
-      }
-      header > div {width: 100%;}
-      header > div:nth-child(1) {
-        height: 44px;
-        background-color: #f3f3f3;
-      }
-      header > div:nth-child(2) {
-        height: 110px;
-      }
-      header > div:nth-child(3) {
-        height: 46px;
-        background-color: #564f47;
-      }
-      header > div > *{
-        width: 1126px;
-        height: 100%;
-        margin: 0 auto;
-      }
-      header .top {
-        float: right;
-        margin-top: 6px;
-      }
-      header .ico {
-        display: inline-block;
-        width: 17px;
-        height: 17px;
-        margin-right: 30px;
-        background-image: url('./images/sprites.png');
-      }
-      header .ico.user {
-        position: relative;
-        top: 5px;
-        width: 17px;
-        height: 17px;
-        background-position: 0 -504px;
-      }
-      header .ico.cart {
-        width: 17px;
-        height: 17px;
-        background-position: 0 -487px;
-      }
-      header .ico.wish {
-        width: 20px;
-        height: 18px;
-        background-position: 0 -539px;
-      }
-      header .ico .label {
-        position: relative;
-        left: 24px;
-        top: 1px;
-        display: block;
-        width: 16px;
-        height: 16px;
-        text-align: center;
-        border-radius: 50%;
-        background-color: #ff6e53;
-        font-size: 11px;
-        color: white;
-      }
-      header > div > * {
-        width: 1126px;
-        height: 100%;
-        margin: 0 auto;
-      }
-      header > div p {
-        float: right;
-      }
-      header section > .logo {
-        float: left;
-        margin-top: 10px;
-      }
-      header section > .banner{
-        float: right;
-        margin-top: 20px;
-      }
-      header .gnb {
-        width: 100%;
-        height: 100%;
-      }
-      header .gnb >li {
-        width: 16.66%;
-        height: 100%;
-        float: left;
-      }
-      header .gnb a {
-        display: block;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        line-height: 46px;
-        font-family: arial;
-        font-size: 15px;
-        font-weight: bold;
-        color: #b0a171;
-        background-color: #464545;
-      }
-      header .gnb a:hover {
-        background-color: #396340;
-        color: #fff;
-        font-size: 16px;
-      }
-      main {
-        width: 100%;
-        height: auto;
-      }
-      main > section {
-        width: 100%;
-        height: auto;
-        padding: 40px 0;
-        box-sizing: border-box;
-      }
-      main > section > h3 {
-        margin-bottom: 40px;
-        text-align: center;
-        font-size: 27px;
-        color: #564f47;
-      }
-      main > section > h3 > strong {
-        font-size: 27px;
-        font-weight: bold;
-        color: #699270;
-      }
-      main > section:nth-child(1) {
-        height: 480px;
-      }
-      main > section:nth-child(2) {
-        height: auto;
-      }
-      main > section:nth-child(3) {
-        height: 620px;
-      }
-      main > section:nth-child(4) {
-        height: 220px;
-      }
-      main > section:nth-child(5) {
-        height: auto;
-      }
-      main > section:nth-child(6) {
-        height: 220px;
-      }
-      main > section:nth-child(7) {
-        height: auto;
-      }
-
-      main > section > article {
-        width: 1126px;
-        height: 100%;
-        margin: 0 auto;
-      }
-      main > .banner > article {
-        position: relative;
-      }
-      main > .banner > article > img {position: absolute;}
-      main > .banner > article > img:nth-child(1){
-        left: 10px;
-        top: 40px;
-      }
-      main > .banner > article > img:nth-child(2){
-        left: 460px;
-        top: 40px;
-      }
-      main > .banner > article > img:nth-child(3){
-        right: 10px;
-        bottom: 100px;
-      }
-      main > .new > article {
-        height: 480px;
-        border: 1px solid #d4d4d4;
-        box-sizing: border-box;
-      }
-      main > .new > article > div {
-        position: relative;
-        width: 345px;
-        float: left;
-        box-sizing: border-box;
-      }
-      main > .new > article > div:nth-child(1) {
-        width: 434px;
-        height: 100%;
-        background-image: url('./images/main_new_img1.jpg');
-      }
-      main > .new > article > div:nth-child(2) {
-        height: 50%;
-        border-right: 1px solid #d4d4d4;
-        border-bottom: 1px solid #d4d4d4;
-      }
-      main > .new > article >div:nth-child(3) {
-        height: 50%;
-        border-bottom: 1px solid #d4d4d4;
-      }
-      main > .new > article > div:nth-child(4) {
-        height: 50%;
-        border-right: 1px solid #d4d4d4;
-      }
-      main > .new > article > div:nth-child(5) {height: 50%;}
-      main > .new div >img {position: absolute;}
-      main > .new div:nth-child(1) > img {left: 0; top: 0;}
-      main > .new div:nth-child(2) > img {left: 20px; top: 20px;}
-      main > .new div:nth-child(3) > img {right: 10px; bottom: 10px;}
-      main > .new div:nth-child(4) > img {right: 0; bottom: 0;}
-      main > .new div:nth-child(5) > img {right: 0; bottom: 0;}
-      main > .banner2 div {
-        float: left;
-        width: 25%;
-        height: 334px;
-        border: 1px solid pink;
-        box-sizing: border-box;
-      }
-      main > .green div {
-        float: left;
-        width: 25%;
-        height: 400px;
-        border: 1px solid pink;
-        box-sizing: border-box;
-      }
-      main > .rice div {
-        float: left;
-        width: 25%;
-        height: 400px;
-        border: 1px solid pink;
-        box-sizing: border-box;
-      }
-      footer {
-        width: 100%;
-        height: 210px;
-        border: 1px solid blue;
-        box-sizing: border-box;
-      }
-      footer > div {
-        width: 1126px;
-        height: 100%;
-        border: 1px solid green;
-        box-sizing: border-box;
-        margin: 0 auto;
-      }
-    </style>
+    <link rel="stylesheet" href="./css/index.css">
   </head>
   <body>
     <div id="container">
@@ -371,38 +116,141 @@
             </div>
           </article>
         </section>
-        <section class="banner2">
+        <section class="master">
+          <h3>전국최고<strong>장터명인</strong></h3>
           <article>
-            <div class="box1">1</div>
-            <div class="box2">2</div>
-            <div class="box3">3</div>
-            <div class="box4">4</div>
+            <div>
+              <img src="./images/main_master_pic1.jpg" alt="master1">
+              <p>강원도 농작물 명인<br>내용을 입력 내용을 입력하세요.</p>
+              <span class="name">김ㅇㅇ님</span>
+            </div>
+            <div>
+              <img src="./images/main_master_pic1.jpg" alt="master1">
+              <p>강원도 농작물 명인<br>내용을 입력 내용을 입력하세요.</p>
+              <span class="name">김ㅇㅇ님</span>
+            </div>
+            <div>
+              <img src="./images/main_master_pic1.jpg" alt="master1">
+              <p>강원도 농작물 명인<br>내용을 입력 내용을 입력하세요.</p>
+              <span class="name">김ㅇㅇ님</span>
+            </div>
+            <div>
+              <img src="./images/main_master_pic1.jpg" alt="master1">
+              <p>강원도 농작물 명인<br>내용을 입력 내용을 입력하세요.</p>
+              <span class="name">김ㅇㅇ님</span>
+            </div>
           </article>
         </section>
-        <section class="img"></section>
-        <section class="green">
-          <article>
-            <div class="box1">1</div>
-            <div class="box2">2</div>
-            <div class="box3">3</div>
-            <div class="box4">4</div>
-            <div class="box5">5</div>
-            <div class="box6">6</div>
-            <div class="box7">7</div>
-            <div class="box8">8</div>
+        <section class="organic_banner">
+          <img src="./images/main_organic_bg_txt.png" alt="자연 그대로의 신선함 싱싱하고 다양한 유기농 쌈채소">
+        </section>
+        <section class="organic">
+          <h3>장터<strong>유기농 쌈채소</strong></h3>
+          <article class="gallary">
+            <div>
+              <img src="./images/main_organic_thum1.jpg" alt="쌈채소1">
+              <span class="tit">건강한 자연의 맛과 영양쌈</span>
+              <span class="txt">직접 농사짓는 농산물 세계3대 장수 식품</span>
+              <span class="price">20,000</span>
+            </div>
+            <div>
+              <img src="./images/main_organic_thum2.jpg" alt="쌈채소2">
+              <span class="tit">건강한 자연의 맛과 영양쌈</span>
+              <span class="txt">직접 농사짓는 농산물 세계3대 장수 식품</span>
+              <span class="price">20,000</span>
+            </div>
+            <div>
+              <img src="./images/main_organic_thum3.jpg" alt="쌈채소3">
+              <span class="tit">건강한 자연의 맛과 영양쌈</span>
+              <span class="txt">직접 농사짓는 농산물 세계3대 장수 식품</span>
+              <span class="price">20,000</span>
+            </div>
+            <div>
+              <img src="./images/main_organic_thum4.jpg" alt="쌈채소4">
+              <span class="tit">건강한 자연의 맛과 영양쌈</span>
+              <span class="txt">직접 농사짓는 농산물 세계3대 장수 식품</span>
+              <span class="price">20,000</span>
+            </div>
+            <div>
+              <img src="./images/main_organic_thum5.jpg" alt="쌈채소5">
+              <span class="tit">건강한 자연의 맛과 영양쌈</span>
+              <span class="txt">직접 농사짓는 농산물 세계3대 장수 식품</span>
+              <span class="price">20,000</span>
+            </div>
+            <div>
+              <img src="./images/main_organic_thum6.jpg" alt="쌈채소6">
+              <span class="tit">건강한 자연의 맛과 영양쌈</span>
+              <span class="txt">직접 농사짓는 농산물 세계3대 장수 식품</span>
+              <span class="price">20,000</span>
+            </div>
+            <div>
+              <img src="./images/main_organic_thum7.jpg" alt="쌈채소7">
+              <span class="tit">건강한 자연의 맛과 영양쌈</span>
+              <span class="txt">직접 농사짓는 농산물 세계3대 장수 식품</span>
+              <span class="price">20,000</span>
+            </div>
+            <div>
+              <img src="./images/main_organic_thum8.jpg" alt="쌈채소8">
+              <span class="tit">건강한 자연의 맛과 영양쌈</span>
+              <span class="txt">직접 농사짓는 농산물 세계3대 장수 식품</span>
+              <span class="price">20,000</span>
+            </div>
           </article>
         </section>
-        <section class="img"></section>
-        <section class="rice">
-          <article>
-            <div class="box1">1</div>
-            <div class="box2">2</div>
-            <div class="box3">3</div>
-            <div class="box4">4</div>
-            <div class="box5">5</div>
-            <div class="box6">6</div>
-            <div class="box7">7</div>
-            <div class="box8">8</div>
+        <section class="grain_banner">
+          <img src="./images/main_grain_bg_txt.png" alt="풍부한 영양이 살아있는 건강잡곡">
+        </section>
+        <section class="grain">
+          <h3>장터<strong>쌀·잡곡</strong></h3>
+          <article class="gallary">
+            <div>
+              <img src="./images/main_grain_thum1.jpg" alt="잡곡1">
+              <span class="tit">국내산 100% 잡곡</span>
+              <span class="txt">직접 농사짓는 농산물 세계3대 장수 식품</span>
+              <span class="price">20,000</span>
+            </div>
+            <div>
+              <img src="./images/main_grain_thum2.jpg" alt="잡곡2">
+              <span class="tit">국내산 100% 잡곡</span>
+              <span class="txt">직접 농사짓는 농산물 세계3대 장수 식품</span>
+              <span class="price">20,000</span>
+            </div>
+            <div>
+              <img src="./images/main_grain_thum3.jpg" alt="잡곡3">
+              <span class="tit">국내산 100% 잡곡</span>
+              <span class="txt">직접 농사짓는 농산물 세계3대 장수 식품</span>
+              <span class="price">20,000</span>
+            </div>
+            <div>
+              <img src="./images/main_grain_thum4.jpg" alt="잡곡4">
+              <span class="tit">국내산 100% 잡곡</span>
+              <span class="txt">직접 농사짓는 농산물 세계3대 장수 식품</span>
+              <span class="price">20,000</span>
+            </div>
+            <div>
+              <img src="./images/main_grain_thum5.jpg" alt="잡곡5">
+              <span class="tit">국내산 100% 잡곡</span>
+              <span class="txt">직접 농사짓는 농산물 세계3대 장수 식품</span>
+              <span class="price">20,000</span>
+            </div>
+            <div>
+              <img src="./images/main_grain_thum6.jpg" alt="잡곡6">
+              <span class="tit">국내산 100% 잡곡</span>
+              <span class="txt">직접 농사짓는 농산물 세계3대 장수 식품</span>
+              <span class="price">20,000</span>
+            </div>
+            <div>
+              <img src="./images/main_grain_thum7.jpg" alt="잡곡7">
+              <span class="tit">국내산 100% 잡곡</span>
+              <span class="txt">직접 농사짓는 농산물 세계3대 장수 식품</span>
+              <span class="price">20,000</span>
+            </div>
+            <div>
+              <img src="./images/main_grain_thum8.jpg" alt="잡곡8">
+              <span class="tit">국내산 100% 잡곡</span>
+              <span class="txt">직접 농사짓는 농산물 세계3대 장수 식품</span>
+              <span class="price">20,000</span>
+            </div>
           </article>
         </section>
       </main>

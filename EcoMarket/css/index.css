@@ -118,6 +118,64 @@
     color: #fff;
     font-size: 16px;
   }
+
+  main {
+    width: 100%;
+    height: auto;
+  }
+  main > section {
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+    box-sizing: border-box;
+  }
+  main > section:nth-child(1) {height: 480px;}
+  main > section:nth-child(3) {height: 620px;}
+  main > section:nth-child(4) {height: 220px;}
+  main > section:nth-child(6) {height: 220px;}
+  
+  main > section > article {
+    width: 1126px;
+    height: 100%;
+    margin: 0 auto ;
+  }
+
+  main > section > h3 {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 27px;
+    color: #564f47;
+  }
+
+  main > section > h3 > strong {
+    font-size: 27px;
+    font-weight: bold;
+    color: #699270;
+  }
+
+  main > .banner > article {position: relative;}
+  main > .banner > article > img {position: absolute;}
+  main > .banner img:nth-child(1) {left: 10px; top: 40px;}
+  main > .banner img:nth-child(2) {left: 460px; top: 40px;}
+  main > .banner img:nth-child(3) {right: 10px; bottom: 100px;}
+
+  main > .new > article {
+    height: 480px;
+    border: 1px solid #d4d4d4;
+    box-sizing: border-box;
+  }
+  
+  main > .new > article > div:nth-child(1) {
+    background-image: url('../images/main_new_img1.jpg');
+    width: 434px;
+    height: 100%;
+  }
+  main > .new > article > div > img {}
+  main > .new > article > div > span {}
+  main > .new > article > div > .txt {}
+  main > .new > article > div > .tit {}
+  main > .new > article > div > .tit > strong {}
+  main > .new > article > div > .price {}
  
   footer {
     width: 100%;

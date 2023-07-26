@@ -165,11 +165,34 @@
     box-sizing: border-box;
   }
   
+    main > .new > article > div {
+      position: relative;
+      width: 345px;
+      height: 50%;
+  }
+  
   main > .new > article > div:nth-child(1) {
     background-image: url('../images/main_new_img1.jpg');
     width: 434px;
     height: 100%;
   }
+
+  main > .new > article > div:nth-child(2) {
+   border-right: 1px solid #d4d4d4; 
+   border-bottom: 1px solid #d4d4d4;
+  }
+  main > .new > article > div:nth-child(3) {
+    border-bottom: 1px solid #d4d4d4;
+  }
+  main > .new > article > div:nth-child(4) {
+    border-right: 1px solid #d4d4d4;
+  }
+  main > .new div > img {position: absolute;}
+
+  main > .new div:nth-child(1) > img {left: 0; top: 0;} 
+  main > .new div:nth-child(2) > img {left: 20px; top: 20px;}
+
+
   main > .new > article > div > img {}
   main > .new > article > div > span {}
   main > .new > article > div > .txt {}

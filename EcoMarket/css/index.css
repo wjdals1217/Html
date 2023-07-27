@@ -167,8 +167,10 @@
   
     main > .new > article > div {
       position: relative;
+      float: left;
       width: 345px;
       height: 50%;
+      box-sizing: border-box;
   }
   
   main > .new > article > div:nth-child(1) {
@@ -191,14 +193,39 @@
 
   main > .new div:nth-child(1) > img {left: 0; top: 0;} 
   main > .new div:nth-child(2) > img {left: 20px; top: 20px;}
+  main > .new div:nth-child(3) > img {right: 10px; bottom: 10px;}
+  main > .new div:nth-child(4) > img {right: 0px; bottom: 0px;}
+  main > .new div:nth-child(5) > img {right: 0px; bottom: 0px;}
 
 
-  main > .new > article > div > img {}
-  main > .new > article > div > span {}
+  main > .new div > span {position: absolute;}
+  main > .new div >span > strong {
+    font-size: 32px;
+    opacity: 1;
+    color: #c3d069;
+    font-weight: bold;
+  }
+  main > .new div:nth-child(1) > .txt {
+    left: 40px;
+    top: 60px;
+    font-size: 27px;
+    color: #564f47;
+  }
   main > .new > article > div > .txt {}
+
+  main > .new div:nth-child(1) > .tit {
+    left: 40px;
+    top: 116px;
+    font-size: 26px;
+    color: white;
+    padding: 4px 6px;
+    background-image: url('../images/bg_transparent.png');
+  }
   main > .new > article > div > .tit {}
   main > .new > article > div > .tit > strong {}
-  main > .new > article > div > .price {}
+  main > .new div > .price {color: #ef9120; font-size: 30px;}
+  main > .new div:nth-child(1) > .price {right: 20px;bottom: 20px;}
+  main > .new div > .price::after {content: '원'; color: #ef9120;font-size: 18px;}
  
   footer {
     width: 100%;

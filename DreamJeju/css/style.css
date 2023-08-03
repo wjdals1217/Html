@@ -64,8 +64,6 @@ header > nav ol {
     display: none;
 }
 
-header > nav ol > li {}
-header > nav ol > li > a {}
 
 main {
     width: 100%;
@@ -127,7 +125,7 @@ main {
 }
 
 #tabMenu > label > input[type=radio]{display: none;}
-#tabMenu > label:nth-child(1) {
+#tabMenu > label.on {
     color: #bb0000;
     font-weight: bold;
 }
@@ -159,11 +157,6 @@ main {
 #tabMenu >section ul a {
     font-size:16px;                
 }
-#tabMenu >section ol {}
-#tabMenu >section ol >li {}
-#tabMenu >section ol a {}
-#tabMenu >section ol img {}
-
 #links {
     float: left;
     width: 600px;

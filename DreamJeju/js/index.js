@@ -1,7 +1,7 @@
 $(function(){
     const slides = $('.slides');
     let i = 0;
-
+   
     $('.left').click(function(){
         
         slides.eq(i).animate({'left':'-100%'}, 1000);
@@ -47,3 +47,4 @@ window.onload = function(){
 
     };
 };
+

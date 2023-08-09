@@ -23,7 +23,7 @@ $(function(){
         slides.eq(i).css('left', '-100%').animate({'left':'0'}, 1000);
         
     });
-    $('.right').click(function(){});
+
 
 });
 

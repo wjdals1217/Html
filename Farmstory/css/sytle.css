@@ -205,7 +205,41 @@
 
         main > .info {
             height: 154px;
+            padding: 10px 0;
+            border-top: 2px solid#756c65;
+            box-sizing: border-box;
+            overflow: hidden;
         }
+        main > .info > div {
+            float: left;
+            height: 100%;
+        }
+        main > .info > div > .tit {margin-bottom: 16px;}
+        main > .info > div > .tel {overflow: hidden;}
+        main > .info > div > .tel > * {float: left; margin-right: 16px;}
+        main > .info > div > .tel > p {line-height: 18px; color: #666;}
+        main > .info > div > .btns {margin-top: 16px;}
+        main > .info > div:nth-child(1) {
+            width: 386px;
+        }
+        main > .info > div:nth-child(2) {
+            width: 230px;
+            padding-left: 16px;
+            border-left: 1px solid #d7d7d7;
+            border-right: 1px solid #d7d7d7;
+            box-sizing: border-box;
+        }
+        main > .info > div:nth-child(2) > p {
+            line-height: 18px;
+            color: #666;
+        }
+        main > .info > div:nth-child(3) {
+            width: 360px;
+            padding-left: 10px;
+            box-sizing: border-box;
+        }
+
+
 
          /* 서브페이지  공통 */
          #sub {
@@ -315,10 +349,9 @@
 
         
         /* 장보기 */
-        #sub > .market > aside > .lnb > li:nth-child(1).on > a {
+        #sub > .market > aside > .lnb > li > a {
             background-image: url('../images/images/sub_cate2_lnb1_ov.png');
         }
-
 
         /* 농작물이야기*/
         #sub > .croptalk > aside > .lnb > li:nth-child(1)> a {
@@ -349,5 +382,53 @@
             background-image: url('../images/images/sub_cate3_lnb3_ov.png');
         }
         /* 이벤트*/
+        #sub > .event > aside > .lnb > li > a {
+            background-image: url('../images/images/sub_cate4_lnb1_ov.png');
+        }
         
         /* 커뮤니티*/
+        #sub > .community > aside > .lnb > li:nth-child(1)> a {
+            background-image: url('../images/images/sub_cate5_lnb1.png');
+        }
+        #sub > .community > aside > .lnb > li:nth-child(2) > a {
+            background-image: url('../images/images/sub_cate5_lnb2.png');
+        }
+        #sub > .community > aside > .lnb > li:nth-child(3) > a {
+            background-image: url('../images/images/sub_cate5_lnb3.png');
+        }
+        #sub > .community > aside > .lnb > li:nth-child(4) > a {
+            background-image: url('../images/images/sub_cate5_lnb4.png');
+        }
+        #sub > .community > aside > .lnb > li:nth-child(5) > a {
+            background-image: url('../images/images/sub_cate5_lnb5.png');
+        }
+        #sub > .community > aside > .lnb > li:nth-child(1) > a:hover {
+            background-image: url('../images/images/sub_cate5_lnb1_ov.png');
+        }
+        #sub > .community > aside > .lnb > li:nth-child(2) > a:hover {
+            background-image: url('../images/images/sub_cate5_lnb2_ov.png');
+        }
+        #sub > .community > aside > .lnb > li:nth-child(3) > a:hover {
+            background-image: url('../images/images/sub_cate5_lnb3_ov.png');
+        }
+        #sub > .community > aside > .lnb > li:nth-child(4) > a:hover {
+            background-image: url('../images/images/sub_cate5_lnb4_ov.png');
+        }
+        #sub > .community > aside > .lnb > li:nth-child(5) > a:hover {
+            background-image: url('../images/images/sub_cate5_lnb5_ov.png');
+        }
+        #sub > .community > aside > .lnb > li:nth-child(1).on > a {
+            background-image: url('../images/images/sub_cate5_lnb1_ov.png');
+        }
+        #sub > .community > aside > .lnb > li:nth-child(2).on > a {
+            background-image: url('../images/images/sub_cate5_lnb2_ov.png');
+        }
+        #sub > .community > aside > .lnb > li:nth-child(3).on > a {
+            background-image: url('../images/images/sub_cate5_lnb3_ov.png');
+        }
+        #sub > .community > aside > .lnb > li:nth-child(4).on > a {
+            background-image: url('../images/images/sub_cate5_lnb4_ov.png');
+        }
+        #sub > .community > aside > .lnb > li:nth-child(5).on > a {
+            background-image: url('../images/images/sub_cate5_lnb5_ov.png');
+        }

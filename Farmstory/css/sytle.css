@@ -292,9 +292,6 @@
             height: 100%;
             font-size: 0;
         }
-
-       
-
         
         #sub > section > article {
             float: left;
@@ -327,6 +324,12 @@
             font-weight: bold;
             color: #92ba15;
         }
+        #sub > section > article > p {
+            margin-top: 10px;
+            line-height: 20px;
+            color: #666;
+        }
+
         /* 팜스토리소개 */
         #sub > .introduction > aside > .lnb > li:nth-child(1)> a {
             background-image: url('../images/images/sub_cate1_lnb1.png');
@@ -346,12 +349,38 @@
         #sub > .introduction > aside > .lnb > li:nth-child(2).on > a {
             background-image: url('../images/images/sub_cate1_lnb2_ov.png');
         }
-
+        
         
         /* 장보기 */
         #sub > .market > aside > .lnb > li > a {
             background-image: url('../images/images/sub_cate2_lnb1_ov.png');
         }
+        #sub > .market > article > p > a {
+            color: #999;
+        }
+        #sub > .market > article > p > a.on {
+            color: #111;
+        }
+        #sub > .market table {
+            width: 100%;
+            border-collapse: collapse;
+            border-bottom: 1px solid #111;
+            border-top: 1px solid #111;
+            margin-top: 10px;
+        }
+        #sub > .market table tr {
+            border-bottom: 1px solid #eee;
+        }
+        #sub > .market table tr > td {
+            width: 10%;
+            padding: 10px;
+            box-sizing: border-box;
+            color: #777;
+        }
+        #sub > .market table tr > td:nth-child(3) {width: 20%;}
+        #sub > .market table tr > td > strong {color: #111; font-weight: bold;}
+        #sub > .market >article > p {text-align: center;}
+        #sub > .market >article > p > a.on {text-decoration: underline;}
 
         /* 농작물이야기*/
         #sub > .croptalk > aside > .lnb > li:nth-child(1)> a {
